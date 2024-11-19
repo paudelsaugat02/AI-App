@@ -41,6 +41,31 @@ function UsageTrack () {
         }
     }
 
+    // const IsUserSubscribe = async () => {
+    //     try {
+    //         // Validate input
+    //         const email = user?.primaryEmailAddress?.emailAddress;
+    //         if (!email) {
+    //             console.error("Email address is undefined or null");
+    //             return false;
+    //         }
+    
+    //         // Query database
+    //         const result = await db
+    //             .select()
+    //             .from(UserSubscription)
+    //             .where(eq(UserSubscription.email, email));
+    
+    //         // Log and return result
+    //         console.log("Query result:", result);
+    //         return result.length > 0; // Return true if subscription exists
+    //     } catch (error) {
+    //         console.error("Database query error:", error);
+    //         throw error;
+    //     }
+    // };
+    
+
     const GetTotalUsage=(result:HISTORY[]) =>{
         let total:number=0;
         result.forEach(element => {
